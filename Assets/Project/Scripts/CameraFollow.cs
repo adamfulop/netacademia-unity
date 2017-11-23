@@ -2,34 +2,34 @@
 
 public class CameraFollow : MonoBehaviour 
 {
-	public float xMargin = 1f;		// Distance in the x axis the player can move before the camera follows.
-	public float zMargin = 1f;		// Distance in the y axis the player can move before the camera follows.
-	public float xSmooth = 8f;		// How smoothly the camera catches up with it's target movement in the x axis.
-	public float zSmooth = 8f;		// How smoothly the camera catches up with it's target movement in the y axis.
-	public Vector3 maxXAndZ;		// The maximum x and y coordinates the camera can have.
-	public Vector3 minXAndZ;		// The minimum x and y coordinates the camera can have.
+	public float xMargin = 1f;		// x irányban mennyit mozdulhat el a játékos karakter a CameraRoot objektumtól
+	public float zMargin = 1f;		// z irányban mennyit mozdulhat el a játékos karakter a CameraRoot objektumtól
+	public float xSmooth = 8f;		// x irányban milyen "simítással" követi a kamera a játékost
+	public float zSmooth = 8f;		// z irányban milyen "simítással" követi a kamera a játékost
+	public Vector3 maxXAndZ;		// maximum x és z, ahol a kamera lehet
+	public Vector3 minXAndZ;		// minimum x és z, ahol a kamera lehet
 	
 	
-	private Transform player;		// Reference to the player's transform.
+	private Transform player;		// játékos transform komponensére referencia
 	
 	
 	void Awake ()
 	{
-		// Setting up the reference.
+		// játékos referencia beállítása tag alapján
 		player = GameObject.FindGameObjectWithTag("Player").transform;
 	}
 	
 	
 	bool CheckXMargin()
 	{
-		// Returns true if the distance between the camera and the player in the x axis is greater than the x margin.
+		// igazzal tér vissza, ha a játékos és a CameraRoot x pozíciójának különbsége nagyobb, mint az xMargin
 		return Mathf.Abs(transform.position.x - player.position.x) > xMargin;
 	}
 	
 	
 	bool CheckZMargin()
 	{
-		// Returns true if the distance between the camera and the player in the y axis is greater than the y margin.
+		// igazzal tér vissza, ha a játékos és a CameraRoot z pozíciójának különbsége nagyobb, mint a zMargin
 		return Mathf.Abs(transform.position.z - player.position.z) > zMargin;
 	}
 	
@@ -42,25 +42,24 @@ public class CameraFollow : MonoBehaviour
 	
 	void TrackPlayer ()
 	{
-		// By default the target x and y coordinates of the camera are it's current x and y coordinates.
+		// a CameraRoot pozíciója
 		float targetX = transform.position.x;
 		float targetZ = transform.position.z;
 		
-		// If the player has moved beyond the x margin...
+		// Ha x irányban mozgatni kell...
 		if(CheckXMargin())
-			// ... the target x coordinate should be a Lerp between the camera's current x position and the player's current x position.
+			// ... interpolálunk a CameraRoot mostani pozíciójáról a játékos pozíciójára
 			targetX = Mathf.Lerp(transform.position.x, player.position.x, xSmooth * Time.deltaTime);
 		
-		// If the player has moved beyond the y margin...
+		// Ugyanaz, csak z irányban
 		if(CheckZMargin())
-			// ... the target y coordinate should be a Lerp between the camera's current y position and the player's current y position.
 			targetZ = Mathf.Lerp(transform.position.z, player.position.z, zSmooth * Time.deltaTime);
 		
-		// The target x and y coordinates should not be larger than the maximum or smaller than the minimum.
+		// a pozíciót a min és max értékek közé "vágjuk"
 		targetX = Mathf.Clamp(targetX, minXAndZ.x, maxXAndZ.x);
 		targetZ = Mathf.Clamp(targetZ, minXAndZ.z, maxXAndZ.z);
 		
-		// Set the camera's position to the target position with the same z component.
+		// beállítjuk az új pozíciót
 		transform.position = new Vector3(targetX, transform.position.y, targetZ);
 	}
 }

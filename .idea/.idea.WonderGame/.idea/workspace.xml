@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98301ba1-57ba-4fb3-93e8-2a8c4903e562" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Project/Scenes/Game.unity" afterPath="$PROJECT_DIR$/Assets/Project/Scenes/Game.unity" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.WonderGame/.idea/indexLayout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.WonderGame/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.WonderGame/.idea/contentModel.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.WonderGame/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.WonderGame/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.WonderGame/riderModule.iml" afterPath="$PROJECT_DIR$/.idea/.idea.WonderGame/riderModule.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/Unity3DRider.cs" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/Unity3DRider.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Project/Scripts/CameraFollow.cs" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/CameraFollow.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Project/Scripts/CharacterMove.cs" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/CharacterMove.cs" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -11,23 +17,55 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="CharacterMove.cs" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="CharacterMove.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Project/Scripts/CharacterMove.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="742">
-              <caret line="45" column="50" lean-forward="false" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+              <caret line="59" column="50" lean-forward="false" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
               <folding>
-                <marker date="1511197454935" expanded="true" signature="6:32" ph="..." />
-                <marker date="1511197454935" expanded="true" signature="77:1733" ph="{...}" />
-                <marker date="1511197454935" expanded="true" signature="323:424" ph="{...}" />
-                <marker date="1511197454935" expanded="true" signature="457:679" ph="{...}" />
-                <marker date="1511197454935" expanded="true" signature="747:1099" ph="{...}" />
-                <marker date="1511197454935" expanded="true" signature="1030:1093" ph="{...}" />
-                <marker date="1511197454935" expanded="true" signature="1169:1495" ph="{...}" />
-                <marker date="1511197454935" expanded="true" signature="1571:1731" ph="{...}" />
+                <marker date="1511432183532" expanded="false" signature="6:32" ph="..." />
+                <marker date="1511432183532" expanded="true" signature="77:2967" ph="{...}" />
+                <marker date="1511432183532" expanded="true" signature="371:503" ph="/* más komponensek referenciáinak inicializálása ... */" />
+                <marker date="1511432183532" expanded="true" signature="529:630" ph="{...}" />
+                <marker date="1511432183532" expanded="true" signature="663:1087" ph="{...}" />
+                <marker date="1511432183532" expanded="true" signature="673:866" ph="/* vízszintes és függőleges input tengely értékeinek elkérése (-1 és 1 közötti érték) ... */" />
+                <marker date="1511432183532" expanded="true" signature="1155:1816" ph="{...}" />
+                <marker date="1511432183532" expanded="true" signature="1165:1319" ph="/* a _movement az elmozdulás vektor az aktuális updateben ... */" />
+                <marker date="1511432183532" expanded="true" signature="1639:1810" ph="{...}" />
+                <marker date="1511432183532" expanded="true" signature="1644:1748" ph="/* &quot;== 0&quot; helyett &quot;&gt; tolerance&quot;, mert float ... */" />
+                <marker date="1511432183532" expanded="true" signature="1886:2625" ph="{...}" />
+                <marker date="1511432183532" expanded="true" signature="1896:2068" ph="/* Quaternion részletesebb információ: https://docs.unity3d.com/ScriptReference/Quaternion.html ... */" />
+                <marker date="1511432183532" expanded="true" signature="2701:2965" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CameraFollow.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Project/Scripts/CameraFollow.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1037">
+              <caret line="61" column="36" lean-forward="false" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
+              <folding>
+                <marker date="1511432931851" expanded="true" signature="62:2068" ph="{...}" />
+                <marker date="1511432931851" expanded="true" signature="688:806" ph="{...}" />
+                <marker date="1511432931851" expanded="true" signature="831:1014" ph="{...}" />
+                <marker date="1511432931851" expanded="true" signature="1039:1221" ph="{...}" />
+                <marker date="1511432931851" expanded="true" signature="1246:1269" ph="{...}" />
+                <marker date="1511432931851" expanded="true" signature="1294:2066" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -39,8 +77,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Project/Scripts/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project/Scripts/CharacterMove.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Project/Scripts/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -56,7 +94,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -79,74 +117,13 @@
     <panes>
       <pane id="SolutionExplorer">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WonderGame (4 projects)" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WonderGame (4 projects)" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Assembly-CSharp" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Assets" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WonderGame (4 projects)" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Assembly-CSharp" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Assets" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Scripts" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WonderGame (4 projects)" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Assembly-CSharp" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="WonderGame (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
         </subPane>
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
@@ -170,6 +147,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Unity Debug.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" />
     <configuration default="true" type="DotNetProject" factoryName=".NET Project">
       <option name="PROJECT_PATH" value="" />
       <option name="PROJECT_KIND" value="None" />
@@ -185,12 +163,6 @@
     <configuration default="true" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug">
       <method />
     </configuration>
-    <configuration default="false" name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" pid="920">
-      <method />
-    </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Unity Debug.Attach to Unity Editor" />
-    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -203,11 +175,13 @@
       <option name="presentableId" value="Default" />
       <updated>1511195215314</updated>
       <workItem from="1511195220986" duration="3681000" />
+      <workItem from="1511429720439" duration="393000" />
+      <workItem from="1511430717536" duration="1696000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3681000" />
+    <option name="totallyTimeSpent" value="5770000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -220,31 +194,32 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1663113" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16950959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2611051" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -261,17 +236,76 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Project/Scripts/CharacterMove.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1511432183532" expanded="false" signature="6:32" ph="..." />
+            <marker date="1511432183532" expanded="true" signature="77:2967" ph="{...}" />
+            <marker date="1511432183532" expanded="true" signature="371:503" ph="/* más komponensek referenciáinak inicializálása ... */" />
+            <marker date="1511432183532" expanded="true" signature="529:630" ph="{...}" />
+            <marker date="1511432183532" expanded="true" signature="663:1087" ph="{...}" />
+            <marker date="1511432183532" expanded="true" signature="673:866" ph="/* vízszintes és függőleges input tengely értékeinek elkérése (-1 és 1 közötti érték) ... */" />
+            <marker date="1511432183532" expanded="true" signature="1155:1816" ph="{...}" />
+            <marker date="1511432183532" expanded="true" signature="1165:1319" ph="/* a _movement az elmozdulás vektor az aktuális updateben ... */" />
+            <marker date="1511432183532" expanded="true" signature="1639:1810" ph="{...}" />
+            <marker date="1511432183532" expanded="true" signature="1644:1748" ph="/* &quot;== 0&quot; helyett &quot;&gt; tolerance&quot;, mert float ... */" />
+            <marker date="1511432183532" expanded="true" signature="1886:2625" ph="{...}" />
+            <marker date="1511432183532" expanded="true" signature="1896:2068" ph="/* Quaternion részletesebb információ: https://docs.unity3d.com/ScriptReference/Quaternion.html ... */" />
+            <marker date="1511432183532" expanded="true" signature="2701:2965" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Project/Scripts/CameraFollow.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1511197786446" expanded="true" signature="62:2507" ph="{...}" />
-            <marker date="1511197786446" expanded="true" signature="741:843" ph="{...}" />
-            <marker date="1511197786446" expanded="true" signature="868:1058" ph="{...}" />
-            <marker date="1511197786446" expanded="true" signature="1083:1273" ph="{...}" />
-            <marker date="1511197786446" expanded="true" signature="1298:1321" ph="{...}" />
-            <marker date="1511197786446" expanded="true" signature="1346:2505" ph="{...}" />
+            <marker date="1511432931851" expanded="true" signature="62:2068" ph="{...}" />
+            <marker date="1511432931851" expanded="true" signature="688:806" ph="{...}" />
+            <marker date="1511432931851" expanded="true" signature="831:1014" ph="{...}" />
+            <marker date="1511432931851" expanded="true" signature="1039:1221" ph="{...}" />
+            <marker date="1511432931851" expanded="true" signature="1246:1269" ph="{...}" />
+            <marker date="1511432931851" expanded="true" signature="1294:2066" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Project/Scripts/CharacterMove.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="50" lean-forward="false" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+          <folding>
+            <marker date="1511432183532" expanded="false" signature="6:32" ph="..." />
+            <marker date="1511432183532" expanded="true" signature="77:2967" ph="{...}" />
+            <marker date="1511432183532" expanded="true" signature="371:503" ph="/* más komponensek referenciáinak inicializálása ... */" />
+            <marker date="1511432183532" expanded="true" signature="529:630" ph="{...}" />
+            <marker date="1511432183532" expanded="true" signature="663:1087" ph="{...}" />
+            <marker date="1511432183532" expanded="true" signature="673:866" ph="/* vízszintes és függőleges input tengely értékeinek elkérése (-1 és 1 közötti érték) ... */" />
+            <marker date="1511432183532" expanded="true" signature="1155:1816" ph="{...}" />
+            <marker date="1511432183532" expanded="true" signature="1165:1319" ph="/* a _movement az elmozdulás vektor az aktuális updateben ... */" />
+            <marker date="1511432183532" expanded="true" signature="1639:1810" ph="{...}" />
+            <marker date="1511432183532" expanded="true" signature="1644:1748" ph="/* &quot;== 0&quot; helyett &quot;&gt; tolerance&quot;, mert float ... */" />
+            <marker date="1511432183532" expanded="true" signature="1886:2625" ph="{...}" />
+            <marker date="1511432183532" expanded="true" signature="1896:2068" ph="/* Quaternion részletesebb információ: https://docs.unity3d.com/ScriptReference/Quaternion.html ... */" />
+            <marker date="1511432183532" expanded="true" signature="2701:2965" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Project/Scripts/CameraFollow.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1511432931851" expanded="true" signature="62:2068" ph="{...}" />
+            <marker date="1511432931851" expanded="true" signature="688:806" ph="{...}" />
+            <marker date="1511432931851" expanded="true" signature="831:1014" ph="{...}" />
+            <marker date="1511432931851" expanded="true" signature="1039:1221" ph="{...}" />
+            <marker date="1511432931851" expanded="true" signature="1246:1269" ph="{...}" />
+            <marker date="1511432931851" expanded="true" signature="1294:2066" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -279,16 +313,36 @@
     <entry file="file://$PROJECT_DIR$/Assets/Project/Scripts/CharacterMove.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="742">
-          <caret line="45" column="50" lean-forward="false" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+          <caret line="59" column="50" lean-forward="false" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
           <folding>
-            <marker date="1511197454935" expanded="true" signature="6:32" ph="..." />
-            <marker date="1511197454935" expanded="true" signature="77:1733" ph="{...}" />
-            <marker date="1511197454935" expanded="true" signature="323:424" ph="{...}" />
-            <marker date="1511197454935" expanded="true" signature="457:679" ph="{...}" />
-            <marker date="1511197454935" expanded="true" signature="747:1099" ph="{...}" />
-            <marker date="1511197454935" expanded="true" signature="1030:1093" ph="{...}" />
-            <marker date="1511197454935" expanded="true" signature="1169:1495" ph="{...}" />
-            <marker date="1511197454935" expanded="true" signature="1571:1731" ph="{...}" />
+            <marker date="1511432183532" expanded="false" signature="6:32" ph="..." />
+            <marker date="1511432183532" expanded="true" signature="77:2967" ph="{...}" />
+            <marker date="1511432183532" expanded="true" signature="371:503" ph="/* más komponensek referenciáinak inicializálása ... */" />
+            <marker date="1511432183532" expanded="true" signature="529:630" ph="{...}" />
+            <marker date="1511432183532" expanded="true" signature="663:1087" ph="{...}" />
+            <marker date="1511432183532" expanded="true" signature="673:866" ph="/* vízszintes és függőleges input tengely értékeinek elkérése (-1 és 1 közötti érték) ... */" />
+            <marker date="1511432183532" expanded="true" signature="1155:1816" ph="{...}" />
+            <marker date="1511432183532" expanded="true" signature="1165:1319" ph="/* a _movement az elmozdulás vektor az aktuális updateben ... */" />
+            <marker date="1511432183532" expanded="true" signature="1639:1810" ph="{...}" />
+            <marker date="1511432183532" expanded="true" signature="1644:1748" ph="/* &quot;== 0&quot; helyett &quot;&gt; tolerance&quot;, mert float ... */" />
+            <marker date="1511432183532" expanded="true" signature="1886:2625" ph="{...}" />
+            <marker date="1511432183532" expanded="true" signature="1896:2068" ph="/* Quaternion részletesebb információ: https://docs.unity3d.com/ScriptReference/Quaternion.html ... */" />
+            <marker date="1511432183532" expanded="true" signature="2701:2965" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Project/Scripts/CameraFollow.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="61" column="36" lean-forward="false" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
+          <folding>
+            <marker date="1511432931851" expanded="true" signature="62:2068" ph="{...}" />
+            <marker date="1511432931851" expanded="true" signature="688:806" ph="{...}" />
+            <marker date="1511432931851" expanded="true" signature="831:1014" ph="{...}" />
+            <marker date="1511432931851" expanded="true" signature="1039:1221" ph="{...}" />
+            <marker date="1511432931851" expanded="true" signature="1246:1269" ph="{...}" />
+            <marker date="1511432931851" expanded="true" signature="1294:2066" ph="{...}" />
           </folding>
         </state>
       </provider>
