@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98301ba1-57ba-4fb3-93e8-2a8c4903e562" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.WonderGame/.idea/indexLayout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.WonderGame/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.WonderGame/.idea/contentModel.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.WonderGame/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.WonderGame/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.WonderGame/riderModule.iml" afterPath="$PROJECT_DIR$/.idea/.idea.WonderGame/riderModule.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/Unity3DRider.cs" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/Unity3DRider.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Project/Scripts/CameraFollow.cs" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/CameraFollow.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Project/Scripts/CharacterMove.cs" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/CharacterMove.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,7 +24,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CharacterMove.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CharacterMove.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Project/Scripts/CharacterMove.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="742">
@@ -49,23 +43,6 @@
                 <marker date="1511432183532" expanded="true" signature="1886:2625" ph="{...}" />
                 <marker date="1511432183532" expanded="true" signature="1896:2068" ph="/* Quaternion részletesebb információ: https://docs.unity3d.com/ScriptReference/Quaternion.html ... */" />
                 <marker date="1511432183532" expanded="true" signature="2701:2965" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CameraFollow.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Project/Scripts/CameraFollow.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="61" column="36" lean-forward="false" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
-              <folding>
-                <marker date="1511432931851" expanded="true" signature="62:2068" ph="{...}" />
-                <marker date="1511432931851" expanded="true" signature="688:806" ph="{...}" />
-                <marker date="1511432931851" expanded="true" signature="831:1014" ph="{...}" />
-                <marker date="1511432931851" expanded="true" signature="1039:1221" ph="{...}" />
-                <marker date="1511432931851" expanded="true" signature="1246:1269" ph="{...}" />
-                <marker date="1511432931851" expanded="true" signature="1294:2066" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -176,12 +153,12 @@
       <updated>1511195215314</updated>
       <workItem from="1511195220986" duration="3681000" />
       <workItem from="1511429720439" duration="393000" />
-      <workItem from="1511430717536" duration="1696000" />
+      <workItem from="1511430717536" duration="1896000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5770000" />
+    <option name="totallyTimeSpent" value="5970000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -194,7 +171,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -310,6 +286,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Project/Scripts/CameraFollow.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="61" column="36" lean-forward="false" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
+          <folding>
+            <marker date="1511432931851" expanded="true" signature="62:2068" ph="{...}" />
+            <marker date="1511432931851" expanded="true" signature="688:806" ph="{...}" />
+            <marker date="1511432931851" expanded="true" signature="831:1014" ph="{...}" />
+            <marker date="1511432931851" expanded="true" signature="1039:1221" ph="{...}" />
+            <marker date="1511432931851" expanded="true" signature="1246:1269" ph="{...}" />
+            <marker date="1511432931851" expanded="true" signature="1294:2066" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Project/Scripts/CharacterMove.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="742">
@@ -328,21 +319,6 @@
             <marker date="1511432183532" expanded="true" signature="1886:2625" ph="{...}" />
             <marker date="1511432183532" expanded="true" signature="1896:2068" ph="/* Quaternion részletesebb információ: https://docs.unity3d.com/ScriptReference/Quaternion.html ... */" />
             <marker date="1511432183532" expanded="true" signature="2701:2965" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Project/Scripts/CameraFollow.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="61" column="36" lean-forward="false" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
-          <folding>
-            <marker date="1511432931851" expanded="true" signature="62:2068" ph="{...}" />
-            <marker date="1511432931851" expanded="true" signature="688:806" ph="{...}" />
-            <marker date="1511432931851" expanded="true" signature="831:1014" ph="{...}" />
-            <marker date="1511432931851" expanded="true" signature="1039:1221" ph="{...}" />
-            <marker date="1511432931851" expanded="true" signature="1246:1269" ph="{...}" />
-            <marker date="1511432931851" expanded="true" signature="1294:2066" ph="{...}" />
           </folding>
         </state>
       </provider>
