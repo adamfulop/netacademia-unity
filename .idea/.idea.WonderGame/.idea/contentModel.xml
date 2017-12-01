@@ -181,6 +181,14 @@
           <e p="Scripts" t="Include">
             <e p="CameraFollow.cs" t="Include" />
             <e p="CharacterMove.cs" t="Include" />
+            <e p="CharacterSettings.cs" t="Include" />
+            <e p="EnemyAudio.cs" t="Include" />
+            <e p="EnemyMove.cs" t="Include" />
+            <e p="GameState.cs" t="Include" />
+            <e p="Pickup.cs" t="Include" />
+            <e p="PlayerInventory.cs" t="Include" />
+            <e p="UIGameOver.cs" t="Include" />
+            <e p="UIPoints.cs" t="Include" />
           </e>
         </e>
         <e p="Standard Assets" t="Include">
