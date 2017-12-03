@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98301ba1-57ba-4fb3-93e8-2a8c4903e562" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.WonderGame/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.WonderGame/.idea/contentModel.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.WonderGame/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.WonderGame/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Project/Prefabs/Character.prefab" afterPath="$PROJECT_DIR$/Assets/Project/Prefabs/Character.prefab" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Project/Scenes/Game.unity" afterPath="$PROJECT_DIR$/Assets/Project/Scenes/Game.unity" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Project/Scripts/CharacterMove.cs" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/CharacterMove.cs" />
-    </list>
+    <list default="true" id="98301ba1-57ba-4fb3-93e8-2a8c4903e562" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Project/Scripts/UIPoints.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="13" column="86" lean-forward="true" selection-start-line="13" selection-start-column="86" selection-end-line="13" selection-end-column="86" />
+              <caret line="13" column="86" lean-forward="false" selection-start-line="13" selection-start-column="86" selection-end-line="13" selection-end-column="86" />
               <folding>
                 <marker date="1512126143096" expanded="false" signature="6:40" ph="..." />
                 <marker date="1512126143096" expanded="true" signature="80:537" ph="{...}" />
@@ -184,12 +178,12 @@
       <workItem from="1511429720439" duration="393000" />
       <workItem from="1511430717536" duration="1896000" />
       <workItem from="1511797882466" duration="6947000" />
-      <workItem from="1512125195269" duration="936000" />
+      <workItem from="1512125195269" duration="1455000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13853000" />
+    <option name="totallyTimeSpent" value="14372000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -608,7 +602,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Project/Scripts/UIPoints.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="13" column="86" lean-forward="true" selection-start-line="13" selection-start-column="86" selection-end-line="13" selection-end-column="86" />
+          <caret line="13" column="86" lean-forward="false" selection-start-line="13" selection-start-column="86" selection-end-line="13" selection-end-column="86" />
           <folding>
             <marker date="1512126143096" expanded="false" signature="6:40" ph="..." />
             <marker date="1512126143096" expanded="true" signature="80:537" ph="{...}" />
