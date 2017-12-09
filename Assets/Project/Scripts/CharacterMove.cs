@@ -1,7 +1,8 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class CharacterMove : MonoBehaviour {
+public class CharacterMove : NetworkBehaviour {
     public CharacterSettings CharacterSettings;
     
     private AudioSource _audioSource;
@@ -10,6 +11,9 @@ public class CharacterMove : MonoBehaviour {
     private Vector3 _movement;
 
     private const float TOLERANCE = 0.01f;
+
+    [SyncVar]
+    private bool _isMoving;
     
     // más komponensek referenciáinak inicializálása
     // (sima GetComponent<>() -> ugyanazon a GameObjecten keressük a komponenseket)
@@ -20,21 +24,25 @@ public class CharacterMove : MonoBehaviour {
     }
 
     private void FixedUpdate() {
-        // vízszintes és függőleges input tengely értékeinek elkérése (-1 és 1 közötti érték)
-        // tengelyek leképzése alapból a nyilak vagy WASD
-        // Lásd Edit -> Project Settings -> Input
-        var inputVertical = Input.GetAxis("Vertical");
-        var inputHorizontal = Input.GetAxis("Horizontal");
+        if (isLocalPlayer) {
+            // vízszintes és függőleges input tengely értékeinek elkérése (-1 és 1 közötti érték)
+            // tengelyek leképzése alapból a nyilak vagy WASD
+            // Lásd Edit -> Project Settings -> Input
+            var inputVertical = Input.GetAxis("Vertical");
+            var inputHorizontal = Input.GetAxis("Horizontal");
 
-        Move(inputHorizontal, inputVertical);
-        SetAnimation(inputHorizontal, inputVertical);
-        SetAudio(inputHorizontal, inputVertical);
+            Move(inputHorizontal, inputVertical);    
+            CmdSetIsMoving(inputHorizontal, inputVertical);
+        }
+        
+        SetAnimation();
+        SetAudio();
     }
     
-    private void SetAudio(float inputHorizontal, float inputVertical) {
+    private void SetAudio() {
         // ha mozog a játékos, és épp nem megy a lépés hang, akkor lejátsszuk
         // ha nem mozog a játékos, és épp megy a lépés hang, akkor leállítjuk
-        if (IsMoving(inputHorizontal, inputVertical)) {
+        if (_isMoving) {
             if (!_audioSource.isPlaying) _audioSource.Play();
         } else {
             if (_audioSource.isPlaying) _audioSource.Stop();
@@ -49,15 +57,16 @@ public class CharacterMove : MonoBehaviour {
         // alkalmazzuk az elmozdulást
         _rigidbody.MovePosition(transform.position + _movement);
 
-        if (IsMoving(inputHorizontal, inputVertical)) {    // "== 0" helyett "> tolerance", mert float
+        if (_isMoving) {    // "== 0" helyett "> tolerance", mert float
             // ha valamelyik input nem 0, akkor forgatunk is
             Rotate(inputHorizontal, inputVertical);
         }
     }
 
     // true, ha épp mozog a játékos (legalább egyik input nem 0), egyébként false
-    private static bool IsMoving(float inputHorizontal, float inputVertical) {
-        return Math.Abs(inputHorizontal) > TOLERANCE || Math.Abs(inputVertical) > TOLERANCE;
+    [Command]
+    private void CmdSetIsMoving(float inputHorizontal, float inputVertical) {
+        _isMoving = Math.Abs(inputHorizontal) > TOLERANCE || Math.Abs(inputVertical) > TOLERANCE;
     }
 
     private void Rotate(float inputHorizontal, float inputVertical) {
@@ -71,9 +80,8 @@ public class CharacterMove : MonoBehaviour {
         _rigidbody.MoveRotation(newRotation);
     }
 
-    private void SetAnimation(float inputHorizontal, float inputVertical) {
+    private void SetAnimation() {
         // animátor paraméter beállítása a bemenet függvényében
-        var isRunning = Math.Abs(inputHorizontal) > TOLERANCE || Math.Abs(inputVertical) > TOLERANCE;    // igaz, ha valamelyik tengely nem 0
-        _animator.SetBool("IsRunning", isRunning);
+        _animator.SetBool("IsRunning", _isMoving);
     }
 }

@@ -180,6 +180,7 @@
         <e p="Project" t="Include">
           <e p="Scripts" t="Include">
             <e p="CameraFollow.cs" t="Include" />
+            <e p="CharacterInit.cs" t="Include" />
             <e p="CharacterMove.cs" t="Include" />
             <e p="CharacterSettings.cs" t="Include" />
             <e p="EnemyAudio.cs" t="Include" />

@@ -536,6 +536,8 @@ GameObject:
   - component: {fileID: 114492948096761516}
   - component: {fileID: 82862998568153316}
   - component: {fileID: 114094392122200762}
+  - component: {fileID: 114350846247641054}
+  - component: {fileID: 114723704553593364}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Untagged
@@ -1466,6 +1468,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AudioInterval: 5
+--- !u!114 &114350846247641054
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1792185790465938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 40
+    i1: 87
+    i2: 35
+    i3: 52
+    i4: 119
+    i5: 201
+    i6: 7
+    i7: 52
+    i8: 251
+    i9: 127
+    i10: 36
+    i11: 56
+    i12: 72
+    i13: 42
+    i14: 230
+    i15: 133
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!114 &114492948096761516
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1477,6 +1511,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d3560775d7f8f343abd7fca507f34fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114723704553593364
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1792185790465938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TransformSyncMode: 3
+  m_SendInterval: 0.1
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_SyncSpin: 0
+  m_MovementTheshold: 0.001
+  m_VelocityThreshold: 0.0001
+  m_SnapThreshold: 5
+  m_InterpolateRotation: 1
+  m_InterpolateMovement: 1
 --- !u!135 &135088618381150014
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -10,33 +10,26 @@ public class CameraFollow : MonoBehaviour
 	public Vector3 minXAndZ;		// minimum x és z, ahol a kamera lehet
 	
 	
-	private Transform player;		// játékos transform komponensére referencia
-	
-	
-	void Awake ()
-	{
-		// játékos referencia beállítása tag alapján
-		player = GameObject.FindGameObjectWithTag("Player").transform;
-	}
+	public Transform Player;		// játékos transform komponensére referencia
 	
 	
 	bool CheckXMargin()
 	{
 		// igazzal tér vissza, ha a játékos és a CameraRoot x pozíciójának különbsége nagyobb, mint az xMargin
-		return Mathf.Abs(transform.position.x - player.position.x) > xMargin;
+		return Mathf.Abs(transform.position.x - Player.position.x) > xMargin;
 	}
 	
 	
 	bool CheckZMargin()
 	{
 		// igazzal tér vissza, ha a játékos és a CameraRoot z pozíciójának különbsége nagyobb, mint a zMargin
-		return Mathf.Abs(transform.position.z - player.position.z) > zMargin;
+		return Mathf.Abs(transform.position.z - Player.position.z) > zMargin;
 	}
 	
 	
 	void FixedUpdate ()
 	{
-		TrackPlayer();
+		if (Player != null) TrackPlayer();
 	}
 	
 	
@@ -49,11 +42,11 @@ public class CameraFollow : MonoBehaviour
 		// Ha x irányban mozgatni kell...
 		if(CheckXMargin())
 			// ... interpolálunk a CameraRoot mostani pozíciójáról a játékos pozíciójára
-			targetX = Mathf.Lerp(transform.position.x, player.position.x, xSmooth * Time.deltaTime);
+			targetX = Mathf.Lerp(transform.position.x, Player.position.x, xSmooth * Time.deltaTime);
 		
 		// Ugyanaz, csak z irányban
 		if(CheckZMargin())
-			targetZ = Mathf.Lerp(transform.position.z, player.position.z, zSmooth * Time.deltaTime);
+			targetZ = Mathf.Lerp(transform.position.z, Player.position.z, zSmooth * Time.deltaTime);
 		
 		// a pozíciót a min és max értékek közé "vágjuk"
 		targetX = Mathf.Clamp(targetX, minXAndZ.x, maxXAndZ.x);
