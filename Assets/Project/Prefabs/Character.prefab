@@ -636,6 +636,7 @@ GameObject:
   - component: {fileID: 114659419604633340}
   - component: {fileID: 114527721417650582}
   - component: {fileID: 114604820983785058}
+  - component: {fileID: 114310529035885584}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -5134,7 +5135,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1302224880009708}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4aeedfbcec93a9d40aaa79543058ba25, type: 3}
   m_Name: 
@@ -5152,6 +5153,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PickupCount: 0
+--- !u!114 &114310529035885584
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1302224880009708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc67caf31e48b1e44af538d198a35d36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterSettings: {fileID: 11400000, guid: e51fdf2b0f75bf040bbe07855fd9bc07, type: 2}
 --- !u!114 &114527721417650582
 MonoBehaviour:
   m_ObjectHideFlags: 1
