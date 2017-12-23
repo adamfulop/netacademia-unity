@@ -1,10 +1,15 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Project.Scripts.Signal;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Networking;
+using Zenject;
 
 public class EnemyMove : NetworkBehaviour {
+    [Inject]
+    public PlayerScoreChangedSignal PlayerScoreChangedSignal { private get; set; }
+    
     private NavMeshAgent _navMeshAgent;
     public List<GameObject> Players = new List<GameObject>();
 
@@ -27,9 +32,19 @@ public class EnemyMove : NetworkBehaviour {
     private void OnTriggerEnter(Collider other) {
         // ha elkapott egy játékost (= ütközött egy játékos taggel rendelkező colliderrel)
         // a játékostól elveszünk egy pontot
-        if (isServer && other.CompareTag("Player")) {
-            if (other.gameObject.GetComponent<PlayerInventory>().PickupCount > 0)
-                other.gameObject.GetComponent<PlayerInventory>().PickupCount--;
+        if (other.CompareTag("Player")) {
+            var inventory = other.gameObject.GetComponent<PlayerInventory>();
+            
+            if (isServer && other.gameObject.GetComponent<PlayerInventory>().PickupCount > 0)
+                inventory.PickupCount--;
+
+            if (inventory.isLocalPlayer) {
+                // FIGYELEM: ÓRÁN IDŐHIÁNY MIATT KIMARADT VÁLTOZTATÁS! (Pickup.cs alapján)
+                // ha a lokális játékost kapta el a zombi, akkor azt is jelezzük
+                // hogy frissülhessen a GUI
+                PlayerScoreChangedSignal.Fire(inventory.PickupCount);
+            }
+            
             Debug.Log("Zombie elkapta a játékost!");
         }
     }

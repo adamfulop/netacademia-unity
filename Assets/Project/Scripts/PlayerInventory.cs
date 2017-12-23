@@ -6,11 +6,6 @@ public class PlayerInventory : NetworkBehaviour {
     [SyncVar]
     public int PickupCount = 0;    // hány pickup van nála jelenleg
 
-    // lokális játékoson hívódik meg (csak a kliensen)
-    public override void OnStartLocalPlayer() {
-        FindObjectOfType<UIPoints>().PlayerInventory = this;
-    }
-
     // csak a serveren hívódik meg
     public override void OnStartServer() {
         FindObjectOfType<GameState>().PlayerInventories.Add(this);
