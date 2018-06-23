@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameState : MonoBehaviour {
     public int WinThreshold = 8;        // ennyi pont kell a nyeréshez
     
-    public List<PlayerInventory> PlayerInventories = new List<PlayerInventory>();
+    public List<MainPlayerInventory> PlayerInventories = new List<MainPlayerInventory>();
 
     private void Update() {
         var winner = PlayerInventories.FirstOrDefault(pi => pi.PickupCount >= WinThreshold);

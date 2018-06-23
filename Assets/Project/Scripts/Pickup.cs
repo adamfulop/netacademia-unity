@@ -10,7 +10,7 @@ public class Pickup : NetworkBehaviour {
     // ha egy játékos felveszi (= ütközik vele), akkor a játékos pontszámát növeljük, és deaktiváljuk a pickupot
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("Player")) {
-            var inventory = other.gameObject.GetComponent<PlayerInventory>();
+            var inventory = other.gameObject.GetComponent<MainPlayerInventory>();
             
             if (isServer) {
                 inventory.PickupCount++;

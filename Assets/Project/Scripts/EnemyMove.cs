@@ -33,9 +33,9 @@ public class EnemyMove : NetworkBehaviour {
         // ha elkapott egy játékost (= ütközött egy játékos taggel rendelkező colliderrel)
         // a játékostól elveszünk egy pontot
         if (other.CompareTag("Player")) {
-            var inventory = other.gameObject.GetComponent<PlayerInventory>();
+            var inventory = other.gameObject.GetComponent<MainPlayerInventory>();
             
-            if (isServer && other.gameObject.GetComponent<PlayerInventory>().PickupCount > 0)
+            if (isServer && other.gameObject.GetComponent<MainPlayerInventory>().PickupCount > 0)
                 inventory.PickupCount--;
 
             if (inventory.isLocalPlayer) {

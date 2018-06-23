@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Adam\.Rider2017.2\system\resharper-host\local\Transient\ReSharperHost\v10\SolutionCaches\_WonderGame.263516002.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Adam\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_WonderGame.263516002.00" t="ExcludeRecursive" />
     <e p="D:\Dev\Unity\WonderGame" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
@@ -238,11 +238,6 @@
         <e p="Plugins" t="Include">
           <e p="Android" t="Include">
             <e p="AndroidManifest.xml" t="Include" />
-          </e>
-          <e p="Editor" t="Include">
-            <e p="JetBrains" t="Include">
-              <e p="Unity3DRider.cs" t="Include" />
-            </e>
           </e>
           <e p="Zenject" t="Include">
             <e p="LICENSE.txt" t="Include" />
@@ -747,7 +742,53 @@
           </e>
         </e>
         <e p="Project" t="Include">
+          <e p="Arcade" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Common" t="Include">
+                <e p="ButtonBehaviour.cs" t="Include" />
+              </e>
+              <e p="Game" t="Include">
+                <e p="AnimatedTexture.cs" t="Include" />
+                <e p="Arrow.cs" t="Include" />
+                <e p="ArrowPickup.cs" t="Include" />
+                <e p="DestroyOffscreen.cs" t="Include" />
+                <e p="Enemy.cs" t="Include" />
+                <e p="GameController.cs" t="Include" />
+                <e p="GameObjectUtil.cs" t="Include" />
+                <e p="InputState.cs" t="Include" />
+                <e p="IRecycle.cs" t="Include" />
+                <e p="Jump.cs" t="Include" />
+                <e p="ObjectPool.cs" t="Include" />
+                <e p="ObjectVelocity.cs" t="Include" />
+                <e p="Obstacle.cs" t="Include" />
+                <e p="Pendulum.cs" t="Include" />
+                <e p="PendulumEnemy.cs" t="Include" />
+                <e p="PixelPerfectCamera.cs" t="Include" />
+                <e p="PlayerAnimationController.cs" t="Include" />
+                <e p="PlayerInventory.cs" t="Include" />
+                <e p="PlayerShoot.cs" t="Include" />
+                <e p="PlayerShot.cs" t="Include" />
+                <e p="Projectile.cs" t="Include" />
+                <e p="RecycleGameObject.cs" t="Include" />
+                <e p="ScoreText.cs" t="Include" />
+                <e p="SpawnedObjectsContainer.cs" t="Include" />
+                <e p="Spawner.cs" t="Include" />
+                <e p="TimeController.cs" t="Include" />
+              </e>
+              <e p="HighScores" t="Include">
+                <e p="BackButton.cs" t="Include" />
+                <e p="HighScoreRecord.cs" t="Include" />
+                <e p="HighScoresController.cs" t="Include" />
+              </e>
+              <e p="MainMenu" t="Include">
+                <e p="HighScoresButton.cs" t="Include" />
+                <e p="MainMenuController.cs" t="Include" />
+                <e p="StartGameButton.cs" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="Scripts" t="Include">
+            <e p="ArcadeMachine.cs" t="Include" />
             <e p="CameraFollow.cs" t="Include" />
             <e p="CharacterInit.cs" t="Include" />
             <e p="CharacterMobileMove.cs" t="Include" />
@@ -757,9 +798,9 @@
             <e p="EnemyAudio.cs" t="Include" />
             <e p="EnemyMove.cs" t="Include" />
             <e p="GameState.cs" t="Include" />
+            <e p="MainPlayerInventory.cs" t="Include" />
             <e p="NetAcademiaGame.cs" t="Include" />
             <e p="Pickup.cs" t="Include" />
-            <e p="PlayerInventory.cs" t="Include" />
             <e p="SceneInstaller.cs" t="Include" />
             <e p="Signal" t="Include">
               <e p="PlayerScoreChangedSignal.cs" t="Include" />
@@ -883,12 +924,33 @@
             <e p="AlphaButtonClickMask.cs" t="Include" />
           </e>
         </e>
-        <e p="StreamingAssets" t="Include">
-          <e p="Vuforia" t="Include">
-            <e p="NetAcademia.xml" t="Include" />
-          </e>
-        </e>
         <e p="Third Party" t="Include">
+          <e p="Black Knight" t="Include">
+            <e p="AnimationEvent.cs" t="Include" />
+            <e p="demo" t="Include">
+              <e p="UnitControl.cs" t="Include" />
+            </e>
+          </e>
+          <e p="LeanPool" t="Include">
+            <e p="Editor" t="Include">
+              <e p="LeanGameObjectPool_Editor.cs" t="Include" />
+            </e>
+            <e p="Examples" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="LeanDelayedPooling.cs" t="Include" />
+                <e p="LeanPoolBenchmark.cs" t="Include" />
+                <e p="LeanPooledRigidbody.cs" t="Include" />
+                <e p="LeanPooledRigidbody2D.cs" t="Include" />
+                <e p="LeanPoolTest.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="LeanClassPool.cs" t="Include" />
+              <e p="LeanGameObjectPool.cs" t="Include" />
+              <e p="LeanPool.cs" t="Include" />
+              <e p="LeanPoolable.cs" t="Include" />
+            </e>
+          </e>
           <e p="Rocks and Boulders 2" t="Include">
             <e p="Editor" t="Include">
               <e p="CrossPlatformInput" t="Include">
@@ -1096,6 +1158,11 @@
               </e>
             </e>
           </e>
+          <e p="SpritesArchers" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Change_Sprite.cs" t="Include" />
+            </e>
+          </e>
         </e>
         <e p="UnityChan" t="Include">
           <e p="LICENSE.txt" t="Include" />
@@ -1127,75 +1194,6 @@
             <e p="Shader" t="Include">
               <e p="AlphaMask.shader" t="Include" />
             </e>
-          </e>
-        </e>
-        <e p="Vuforia" t="Include">
-          <e p="Editor" t="Include">
-            <e p="Scripts" t="Include">
-              <e p="ComponentFactoryStarter" t="Include">
-                <e p="ComponentFactoryStarter.cs" t="Include" />
-              </e>
-              <e p="ExtensionImport.cs" t="Include" />
-              <e p="PostProcessBuildPlayer.cs" t="Include" />
-              <e p="Unzipper" t="Include">
-                <e p="SharpZipLibUnzipper.cs" t="Include" />
-              </e>
-              <e p="VuforiaConfigurationEditor.cs" t="Include" />
-            </e>
-            <e p="WebcamProfiles" t="Include">
-              <e p="profiles.xml" t="Include" />
-            </e>
-          </e>
-          <e p="Scripts" t="Include">
-            <e p="BackgroundPlaneBehaviour.cs" t="Include" />
-            <e p="CloudRecoBehaviour.cs" t="Include" />
-            <e p="CylinderTargetBehaviour.cs" t="Include" />
-            <e p="DefaultInitializationErrorHandler.cs" t="Include" />
-            <e p="DefaultSmartTerrainEventHandler.cs" t="Include" />
-            <e p="DefaultTrackableEventHandler.cs" t="Include" />
-            <e p="GLErrorHandler.cs" t="Include" />
-            <e p="HideExcessAreaBehaviour.cs" t="Include" />
-            <e p="ImageTargetBehaviour.cs" t="Include" />
-            <e p="Internal" t="Include">
-              <e p="AndroidUnityPlayer.cs" t="Include" />
-              <e p="ComponentFactoryStarterBehaviour.cs" t="Include" />
-              <e p="IOSUnityPlayer.cs" t="Include" />
-              <e p="VuforiaBehaviourComponentFactory.cs" t="Include" />
-              <e p="WSAUnityPlayer.cs" t="Include" />
-            </e>
-            <e p="MaskOutBehaviour.cs" t="Include" />
-            <e p="MultiTargetBehaviour.cs" t="Include" />
-            <e p="ObjectTargetBehaviour.cs" t="Include" />
-            <e p="PropBehaviour.cs" t="Include" />
-            <e p="ReconstructionBehaviour.cs" t="Include" />
-            <e p="ReconstructionFromTargetBehaviour.cs" t="Include" />
-            <e p="SurfaceBehaviour.cs" t="Include" />
-            <e p="TextRecoBehaviour.cs" t="Include" />
-            <e p="TurnOffBehaviour.cs" t="Include" />
-            <e p="TurnOffWordBehaviour.cs" t="Include" />
-            <e p="UserDefinedTargetBuildingBehaviour.cs" t="Include" />
-            <e p="Utilities" t="Include">
-              <e p="VRIntegrationHelper.cs" t="Include" />
-            </e>
-            <e p="VideoBackgroundBehaviour.cs" t="Include" />
-            <e p="VirtualButtonBehaviour.cs" t="Include" />
-            <e p="VuforiaBehaviour.cs" t="Include" />
-            <e p="VuforiaConfiguration.cs" t="Include" />
-            <e p="VuforiaRuntimeInitialization.cs" t="Include" />
-            <e p="VuMarkBehaviour.cs" t="Include" />
-            <e p="WireframeBehaviour.cs" t="Include" />
-            <e p="WireframeTrackableEventHandler.cs" t="Include" />
-            <e p="WordBehaviour.cs" t="Include" />
-          </e>
-          <e p="Shaders" t="Include">
-            <e p="BrightTexture.shader" t="Include" />
-            <e p="ClippingMask.shader" t="Include" />
-            <e p="ColoredLines.shader" t="Include" />
-            <e p="DepthMask.shader" t="Include" />
-            <e p="RenderVideoBackground.shader" t="Include" />
-            <e p="Text3D.shader" t="Include" />
-            <e p="VertexLitWithZ.shader" t="Include" />
-            <e p="VideoBackground.shader" t="Include" />
           </e>
         </e>
       </e>
